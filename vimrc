@@ -18,13 +18,12 @@ Bundle 'vim-scripts/L9'
 
 " language support
 Bundle "plasticboy/vim-markdown"
-Bundle "robgleeson/vim-markdown-preview"
-Bundle "slim.vim"
+Bundle "robgleeson/hammer.vim"
 
 " integration
 Bundle "csexton/jekyll.vim"
 Bundle "tpope/vim-fugitive"
-Bundle "gist.vim"
+Bundle "Gist.vim"
 
 " navigation
 Bundle "scrooloose/nerdtree"
@@ -38,10 +37,12 @@ Bundle "vim-scripts/Conque-Shell"
 Bundle "vim-scripts/Align"
 Bundle "vim-scripts/AnsiEsc.vim"
 Bundle "vim-scripts/vimwiki"
-Bundle "snipmate.vim"
+Bundle "msanders/snipmate.vim"
 Bundle "flazz/vim-colorschemes"
 Bundle "ervandew/screen"
 Bundle "vim-scripts/quickfonts.vim"
+
+Bundle "jpalardy/vim-slime"
 
 filetype plugin indent on " after vundle
 
