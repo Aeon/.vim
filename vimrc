@@ -42,15 +42,23 @@ Bundle "flazz/vim-colorschemes"
 Bundle "ervandew/screen"
 Bundle "vim-scripts/quickfonts.vim"
 
+" vim-slime"
 Bundle "jpalardy/vim-slime"
+
+" solarized color theme (http://ethanschoonover.com/solarized)
+Bundle "altercation/vim-colors-solarized"
+
+" Solarized settings
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 
 filetype plugin indent on " after vundle
 
-
-
 " APPEARANCE
-color jellybeans                    " syntax highlighting
-syntax on                           " 
+syntax on
+set background=dark
+colorscheme solarized
+" color jellybeans                    " syntax highlighting
 
 " uncomment in case of nazi takeover:
 "highlight RedundantWhitespace ctermbg=red guibg=red
