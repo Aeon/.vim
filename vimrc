@@ -107,8 +107,6 @@ map <F7> :set fileencoding=
 map <F8> :set filetype=
 
 "map <F9> 
-map <F10> :JekyllPost 
-map <F11> :FufFile ~/dev/jostein.be/_posts/<CR>
 map <F12> :Gist 
 
 map <C-Space> :!
@@ -150,7 +148,5 @@ let g:html_number_lines = 0
 let g:html_ignore_folding = 1
 let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
-
-let g:jekyll_path = "~/dev/jostein.be"
 
 let g:gist_clip_command = 'xclip -selection clipboard'
