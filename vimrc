@@ -93,6 +93,7 @@ set ttyfast		                    " smoother output, they claim
 " SEARCH
 set ignorecase
 set incsearch
+set hlsearch
 
 
 " MAPPINGS
@@ -150,3 +151,24 @@ let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
 
 let g:gist_clip_command = 'xclip -selection clipboard'
+
+" rotate between split windows with ctrl-tab
+"map <C-Tab> <C-W><C-W>
+
+" rotate between buffers in current window
+"map <S-Left> :bprevious<CR>
+"map <S-Right> :bnext<CR>
+
+" highlights interpolated variables in sql strings and does sql-syntax highlighting. yay
+autocmd FileType php let php_sql_query=1
+
+" does exactly that. highlights html inside of php strings
+autocmd FileType php let php_htmlInStrings=1
+
+" discourages use oh short tags. c'mon its deprecated remember
+autocmd FileType php let php_noShortTags=1
+
+" automagically folds functions & methods. this is getting IDE-like isn't it?
+autocmd FileType php let php_folding=1
+
+set clipboard=unnamed
