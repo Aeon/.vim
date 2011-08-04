@@ -1,8 +1,7 @@
-
 TO INSTALL:
 
 cd ~
-git clone http://github.com/jbe/.vim.git
+git clone http://github.com/Aeon/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
@@ -18,13 +17,12 @@ FEATURES
 * Syntax support
   - Markdown (and markdown-preview)
   - CoffeeScript
-  - Slim templates
   - ANSI escaped files
 
 * Integration
   - Git (fugitive.vim)
-  - Jekyll blogging (jekyll.vim)
-  - Hithub gists (gist.vim)
+  - Github gists (Gist.vim)
+  - vim-slime
 
 * Useful plugins
   - FuzzyFinder
@@ -33,8 +31,9 @@ FEATURES
   - Tagbar
   - Align
   - Tab completion (snipmate.vim)
-  - ConqueShell
 
+* Appearance
+  - solarized color scheme (http://ethanschoonover.com/solarized)
 
 REQUIREMENTS
 
