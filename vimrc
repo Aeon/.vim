@@ -7,6 +7,7 @@
 
 set nocompatible      " Vi iMproved
 filetype off          " for vundle
+let mapleader = ","
 
 " vundle bundles:
 set rtp+=~/.vim/bundle/vundle/ 
@@ -45,12 +46,37 @@ Bundle "vim-scripts/quickfonts.vim"
 " vim-slime"
 Bundle "jpalardy/vim-slime"
 
+" command-t plugin
+Bundle "wincent/Command-T"
+" command-t config
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
+
+Bundle "Raimondi/delimitMate"
+
+Bundle "docunext/closetag.vim"
+autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+
+Bundle "majutsushi/tagbar"
+let g:tagbar_usearrows = 1
+noremap <leader>l :TagbarToggle<CR>
+
+Bundle "ChrisYip/Better-CSS-Syntax-for-Vim"
+
+Bundle "pangloss/vim-javascript"
+
+Bundle "scrooloose/syntastic"
+
 " solarized color theme (http://ethanschoonover.com/solarized)
 Bundle "altercation/vim-colors-solarized"
 
 " Solarized settings
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 
 filetype plugin indent on " after vundle
 
@@ -172,3 +198,5 @@ autocmd FileType php let php_noShortTags=1
 autocmd FileType php let php_folding=1
 
 set clipboard=unnamed
+
+autocmd BufRead,BufNewFile,BufReadPre *.css.php set filetype=css
